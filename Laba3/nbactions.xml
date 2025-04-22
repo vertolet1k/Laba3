@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+        <action>
+            <actionName>run</actionName>
+            <packagings>
+                <packaging>jar</packaging>
+            </packagings>
+            <goals>
+                <goal>process-classes</goal>
+                <goal>org.codehaus.mojo:exec-maven-plugin:3.1.0:exec</goal>
+            </goals>
+            <properties>
+                <exec.vmArgs></exec.vmArgs>
+                <exec.args>${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}</exec.args>
+                <exec.appArgs></exec.appArgs>
+                <exec.mainClass>gui.GUI</exec.mainClass>
+                <exec.executable>java</exec.executable>
+            </properties>
+        </action>
+        <action>
+            <actionName>debug</actionName>
+            <packagings>
+                <packaging>jar</packaging>
+            </packagings>
+            <goals>
+                <goal>process-classes</goal>
+                <goal>org.codehaus.mojo:exec-maven-plugin:3.1.0:exec</goal>
+            </goals>
+            <properties>
+                <exec.vmArgs>-agentlib:jdwp=transport=dt_socket,server=n,address=${jpda.address}</exec.vmArgs>
+                <exec.args>${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}</exec.args>
+                <exec.appArgs></exec.appArgs>
+                <exec.mainClass>gui.GUI</exec.mainClass>
+                <exec.executable>java</exec.executable>
+                <jpda.listen>true</jpda.listen>
+            </properties>
+        </action>
+        <action>
+            <actionName>profile</actionName>
+            <packagings>
+                <packaging>jar</packaging>
+            </packagings>
+            <goals>
+                <goal>process-classes</goal>
+                <goal>org.codehaus.mojo:exec-maven-plugin:3.1.0:exec</goal>
+            </goals>
+            <properties>
+                <exec.vmArgs></exec.vmArgs>
+                <exec.args>${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}</exec.args>
+                <exec.mainClass>gui.GUI</exec.mainClass>
+                <exec.executable>java</exec.executable>
+                <exec.appArgs></exec.appArgs>
+            </properties>
+        </action>
+	<bestiarum>
+		<id>1</id>
+		<name>Леший</name>
+		<description>Гибрид человека и лесного духа, охраняющий древние рощи.</description>
+		<danger_level>7</danger_level>
+		<habitat>чащи Брокилона и Эдингеля</habitat>
+		<first_mention>1234-06-21</first_mention>
+		<immunities>магия</immunities>
+		<immunities>оглушение</immunities>
+		<immunities>яды</immunities>
+		<height>3 м</height>
+		<weight>300 кг</weight>
+		<activity>ночью</activity>
+		<recipe>
+			<type>яд</type>
+			<ingredients>корень мандрагоры (3)</ingredients>
+			<ingredients>пепел драконида (1)</ingredients>
+			<ingredients>эссенция полыни</ingredients>
+			<preparation_time>60 мин</preparation_time>
+			<effectiveness>умеренная</effectiveness>
+		</recipe>
+	</bestiarum>
+	<bestiarum>
+		<id>2</id>
+		<name>Полуденница</name>
+		<description>Призрак, терроризирующий поля во время жатвы.</description>
+		<danger_level>5</danger_level>
+		<habitat>поля Редании и амбары Туссента</habitat>
+		<first_mention>1198-07-15</first_mention>
+		<immunities>кровотечение</immunities>
+		<vulnerabilities>световая магия</vulnerabilities>
+		<weight>неосязаем</weight>
+		<activity>днём</activity>
+		<recipe>
+			<type>масло</type>
+			<ingredients>лепестки лунного цветка (2)</ingredients>
+			<ingredients>серебряная нить (1)</ingredients>
+			<ingredients>экстракт чеснока</ingredients>
+			<preparation_time>30 мин</preparation_time>
+			<effectiveness>высокая</effectiveness>
+		</recipe>
+	</bestiarum>
+	<bestiarum>
+		<id>3</id>
+		<name>Катакан</name>
+		<description>Крылатый демон с хвостом скорпиона.</description>
+		<danger_level>9</danger_level>
+		<habitat>горные пещеры Туссента</habitat>
+		<first_mention>1150-04-12</first_mention>
+		<immunities>огонь</immunities>
+		<immunities>яды</immunities>
+		<height>2 м</height>
+		<weight>200 кг</weight>
+		<activity>в сумерках</activity>
+		<recipe>
+			<type>масло</type>
+			<ingredients>жало мантикоры (4)</ingredients>
+			<ingredients>нефритовая пыль (2)</ingredients>
+			<ingredients>спирт Альберихта</ingredients>
+			<preparation_time>90 мин</preparation_time>
+			<effectiveness>критическая</effectiveness>
+		</recipe>
+	</bestiarum>
+	<bestiarum>
+		<id>4</id>
+		<name>Кикимора</name>
+		<description>Болотная нежить из гниющих останков.</description>
+		<danger_level>6</danger_level>
+		<habitat>топи Вендена</habitat>
+		<first_mention>1221-09-03</first_mention>
+		<immunities>удушье</immunities>
+		<vulnerabilities>земляная магия</vulnerabilities>
+		<height>1 м</height>
+		<weight>15 кг</weight>
+		<activity>ночью</activity>
+		<recipe>
+			<ingredients>грибы-поганки (5)</ingredients>
+			<ingredients>глаз василиска (1)</ingredients>
+			<ingredients>роса папоротника (3)</ingredients>
+			<preparation_time>45 мин</preparation_time>
+			<effectiveness>средняя</effectiveness>
+		</recipe>
+	</bestiarum>
+	<bestiarum>
+		<id>5</id>
+		<name>Элементаль льда</name>
+		<description>Дух вечной зимы.</description>
+		<danger_level>10</danger_level>
+		<habitat>ледники Ковира</habitat>
+		<first_mention>1105-12-01</first_mention>
+		<immunities>заморозка</immunities>
+		<immunities>дробление</immunities>
+		<height>5 м</height>
+		<weight>не измерим</weight>
+		<activity>всегда</activity>
+		<recipe>
+			<type>яд</type>
+			<ingredients>сердце огненного элементаля (1)</ingredients>
+			<ingredients>сера (3)</ingredients>
+			<ingredients>расплавленное железо</ingredients>
+			<preparation_time>120 мин</preparation_time>
+			<effectiveness>переменная</effectiveness>
+		</recipe>
+	</bestiarum>
+	<bestiarum>
+		<id>5</id>
+		<name>Элементаль льда</name>
+		<description>Дух вечной зимы.</description>
+		<danger_level>10</danger_level>
+		<habitat>ледники Ковира</habitat>
+		<first_mention>1105-12-01</first_mention>
+		<immunities>заморозка</immunities>
+		<immunities>дробление</immunities>
+		<height>5 м</height>
+		<weight>не измерим</weight>
+		<activity>всегда</activity>
+		<recipe>
+			<type>яд</type>
+			<ingredients>сердце огненного элементаля (1)</ingredients>
+			<ingredients>сера (3)</ingredients>
+			<ingredients>расплавленное железо</ingredients>
+			<preparation_time>120 мин</preparation_time>
+			<effectiveness>переменная</effectiveness>
+		</recipe>
+	</bestiarum>
+	<bestiarum>
+		<id>6</id>
+		<name>Стрыга</name>
+		<description>Проклятая женщина, превратившаяся в кровожадного монстра.</description>
+		<danger_level>8</danger_level>
+		<habitat>заброшенные замки и кладбища</habitat>
+		<first_mention>1176-03-28</first_mention>
+		<immunities>обычное оружие</immunities>
+		<vulnerabilities>серебро</vulnerabilities>
+		<vulnerabilities>чеснок</vulnerabilities>
+		<height>1.8 м</height>
+		<weight>70 кг</weight>
+		<activity>ночью</activity>
+		<recipe>
+			<type>масло</type>
+			<ingredients>чесночный экстракт (2)</ingredients>
+			<ingredients>серебряная пыль (5)</ingredients>
+			<ingredients>корень чертополоха</ingredients>
+			<preparation_time>50 мин</preparation_time>
+			<effectiveness>высокая</effectiveness>
+		</recipe>
+	</bestiarum>
+	<bestiarum>
+		<id>7</id>
+		<name>Допплер</name>
+		<description>Существо, способное принимать облик любого человека.</description>
+		<danger_level>4</danger_level>
+		<habitat>города и крупные поселения</habitat>
+		<first_mention>1203-11-09</first_mention>
+		<immunities>психическое воздействие</immunities>
+		<vulnerabilities>дренний порошок</vulnerabilities>
+		<height>переменный</height>
+		<weight>переменный</weight>
+		<activity>днём и ночью</activity>
+		<recipe>
+			<type>порошок</type>
+			<ingredients>дренний корень (3)</ingredients>
+			<ingredients>кристаллы кварца (1)</ingredients>
+			<ingredients>пепел истины</ingredients>
+			<preparation_time>75 мин</preparation_time>
+			<effectiveness>умеренная</effectiveness>
+		</recipe>
+	</bestiarum>
+	<bestiarum>
+		<id>8</id>
+		<name>Гарпия</name>
+		<description>Крылатые хищники с женскими головами.</description>
+		<danger_level>6</danger_level>
+		<habitat>горные утёсы и прибрежные скалы</habitat>
+		<first_mention>1189-05-17</first_mention>
+		<immunities>падение с высоты</immunities>
+		<vulnerabilities>поражающие зрение заклинания</vulnerabilities>
+		<height>1.5 м</height>
+		<weight>50 кг</weight>
+		<activity>днём</activity>
+		<recipe>
+			<type>бомба</type>
+			<ingredients>перья гарпии (4)</ingredients>
+			<ingredients>селитра (2)</ingredients>
+			<ingredients>смола драконника</ingredients>
+			<preparation_time>40 мин</preparation_time>
+			<effectiveness>средняя</effectiveness>
+		</recipe>
+	</bestiarum>
+	<bestiarum>
+		<id>9</id>
+		<name>Банши</name>
+		<description>Дух, предвещающий смерть своим криком.</description>
+		<danger_level>7</danger_level>
+		<habitat>старые кладбища и руины</habitat>
+		<first_mention>1165-10-31</first_mention>
+		<immunities>физические атаки</immunities>
+		<vulnerabilities>звуковые заклинания</vulnerabilities>
+		<weight>неосязаем</weight>
+		<activity>ночью</activity>
+		<recipe>
+			<type>масло</type>
+			<ingredients>слёзы сирены (1)</ingredients>
+			<ingredients>серебряные колокольчики (3)</ingredients>
+			<ingredients>эфирное масло лаванды</ingredients>
+			<preparation_time>65 мин</preparation_time>
+			<effectiveness>высокая</effectiveness>
+		</recipe>
+	</bestiarum>
+	<bestiarum>
+		<id>10</id>
+		<name>Рарог</name>
+		<description>Огненный дух в форме птицы, способный поджигать всё вокруг.</description>
+		<danger_level>9</danger_level>
+		<habitat>вулканические регионы и места сильной магии</habitat>
+		<first_mention>1142-08-22</first_mention>
+		<immunities>огонь</immunities>
+		<immunities>тепловое воздействие</immunities>
+		<vulnerabilities>водная магия</vulnerabilities>
+		<height>переменный</height>
+		<weight>не измерим</weight>
+		<activity>в сумерках</activity>
+		<recipe>
+			<type>бомба</type>
+			<ingredients>пепел феникса (2)</ingredients>
+			<ingredients>кристаллы льда (4)</ingredients>
+			<ingredients>эссенция водяного</ingredients>
+			<preparation_time>85 мин</preparation_time>
+			<effectiveness>критическая</effectiveness>
+		</recipe>
+	</bestiarum>
+</root>

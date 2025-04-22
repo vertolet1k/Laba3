@@ -1,0 +1,228 @@
+bestiarum:
+  - id: 1
+    name: Леший
+    description: Гибрид человека и лесного духа, охраняющий древние рощи.
+    danger_level: 7
+    habitat: чащи Брокилона и Эдингеля
+    first_mention: '1234-06-21'
+    immunities:
+      - магия
+      - оглушение
+      - яды
+    height: 3 м
+    weight: 300 кг
+    activity: ночью
+    recipe:
+      type: яд
+      ingredients:
+        - корень мандрагоры (3)
+        - пепел драконида (1)
+        - эссенция полыни
+      preparation_time: 60 мин
+      effectiveness: умеренная
+  - id: 2
+    name: Полуденница
+    description: Призрак, терроризирующий поля во время жатвы.
+    danger_level: 5
+    habitat: поля Редании и амбары Туссента
+    first_mention: '1198-07-15'
+    immunities:
+      - кровотечение
+    vulnerabilities:
+      - световая магия
+    weight: неосязаем
+    activity: днём
+    recipe:
+      type: масло
+      ingredients:
+        - лепестки лунного цветка (2)
+        - серебряная нить (1)
+        - экстракт чеснока
+      preparation_time: 30 мин
+      effectiveness: высокая
+  - id: 3
+    name: Катакан
+    description: Крылатый демон с хвостом скорпиона.
+    danger_level: 9
+    habitat: горные пещеры Туссента
+    first_mention: '1150-04-12'
+    immunities:
+      - огонь
+      - яды
+    height: 2 м
+    weight: 200 кг
+    activity: в сумерках
+    recipe:
+      type: масло
+      ingredients:
+        - жало мантикоры (4)
+        - нефритовая пыль (2)
+        - спирт Альберихта
+      preparation_time: 90 мин
+      effectiveness: критическая
+  - id: 4
+    name: Кикимора
+    description: Болотная нежить из гниющих останков.
+    danger_level: 6
+    habitat: топи Вендена
+    first_mention: '1221-09-03'
+    immunities:
+      - удушье
+    vulnerabilities:
+      - земляная магия
+    height: 1 м
+    weight: 15 кг
+    activity: ночью
+    recipe:
+      ingredients:
+        - грибы-поганки (5)
+        - глаз василиска (1)
+        - роса папоротника (3)
+      preparation_time: 45 мин
+      effectiveness: средняя
+  - id: 5
+    name: Элементаль льда
+    description: Дух вечной зимы.
+    danger_level: 10
+    habitat: ледники Ковира
+    first_mention: '1105-12-01'
+    immunities:
+      - заморозка
+      - дробление
+    height: 5 м
+    weight: не измерим
+    activity: всегда
+    recipe:
+      type: яд
+      ingredients:
+        - сердце огненного элементаля (1)
+        - сера (3)
+        - расплавленное железо
+      preparation_time: 120 мин
+      effectiveness: переменная
+  - id: 5
+    name: Элементаль льда
+    description: Дух вечной зимы.
+    danger_level: 10
+    habitat: ледники Ковира
+    first_mention: '1105-12-01'
+    immunities:
+      - заморозка
+      - дробление
+    height: 5 м
+    weight: не измерим
+    activity: всегда
+    recipe:
+      type: яд
+      ingredients:
+        - сердце огненного элементаля (1)
+        - сера (3)
+        - расплавленное железо
+      preparation_time: 120 мин
+      effectiveness: переменная
+  - id: 6
+    name: Стрыга
+    description: Проклятая женщина, превратившаяся в кровожадного монстра.
+    danger_level: 8
+    habitat: заброшенные замки и кладбища
+    first_mention: '1176-03-28'
+    immunities:
+      - обычное оружие
+    vulnerabilities:
+      - серебро
+      - чеснок
+    height: 1.8 м
+    weight: 70 кг
+    activity: ночью
+    recipe:
+      type: масло
+      ingredients:
+        - чесночный экстракт (2)
+        - серебряная пыль (5)
+        - корень чертополоха
+      preparation_time: 50 мин
+      effectiveness: высокая
+  - id: 7
+    name: Допплер
+    description: Существо, способное принимать облик любого человека.
+    danger_level: 4
+    habitat: города и крупные поселения
+    first_mention: '1203-11-09'
+    immunities:
+      - психическое воздействие
+    vulnerabilities:
+      - дренний порошок
+    height: переменный
+    weight: переменный
+    activity: днём и ночью
+    recipe:
+      type: порошок
+      ingredients:
+        - дренний корень (3)
+        - кристаллы кварца (1)
+        - пепел истины
+      preparation_time: 75 мин
+      effectiveness: умеренная
+  - id: 8
+    name: Гарпия
+    description: Крылатые хищники с женскими головами.
+    danger_level: 6
+    habitat: горные утёсы и прибрежные скалы
+    first_mention: '1189-05-17'
+    immunities:
+      - падение с высоты
+    vulnerabilities:
+      - поражающие зрение заклинания
+    height: 1.5 м
+    weight: 50 кг
+    activity: днём
+    recipe:
+      type: бомба
+      ingredients:
+        - перья гарпии (4)
+        - селитра (2)
+        - смола драконника
+      preparation_time: 40 мин
+      effectiveness: средняя
+  - id: 9
+    name: Банши
+    description: Дух, предвещающий смерть своим криком.
+    danger_level: 7
+    habitat: старые кладбища и руины
+    first_mention: '1165-10-31'
+    immunities:
+      - физические атаки
+    vulnerabilities:
+      - звуковые заклинания
+    weight: неосязаем
+    activity: ночью
+    recipe:
+      type: масло
+      ingredients:
+        - слёзы сирены (1)
+        - серебряные колокольчики (3)
+        - эфирное масло лаванды
+      preparation_time: 65 мин
+      effectiveness: высокая
+  - id: 10
+    name: Рарог
+    description: Огненный дух в форме птицы, способный поджигать всё вокруг.
+    danger_level: 9
+    habitat: вулканические регионы и места сильной магии
+    first_mention: '1142-08-22'
+    immunities:
+      - огонь
+      - тепловое воздействие
+    vulnerabilities:
+      - водная магия
+    height: переменный
+    weight: не измерим
+    activity: в сумерках
+    recipe:
+      type: бомба
+      ingredients:
+        - пепел феникса (2)
+        - кристаллы льда (4)
+        - эссенция водяного
+      preparation_time: 85 мин
+      effectiveness: критическая

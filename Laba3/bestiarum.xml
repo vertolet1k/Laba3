@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<bestiarum>
+        <monster>
+            <id>1</id>
+            <name>Леший</name>
+            <description>Гибрид человека и лесного духа, охраняющий древние рощи.</description>
+            <danger_level>7</danger_level>
+            <habitat>чащи Брокилона и Эдингеля</habitat>
+            <first_mention>1234-06-21</first_mention>
+            <immunities>магия</immunities>
+            <immunities>оглушение</immunities>
+            <immunities>яды</immunities>
+            <height>3 м</height>
+            <weight>300 кг</weight>
+            <activity>ночью</activity>
+            <recipe>
+                <type>яд</type>
+                <ingredients>корень мандрагоры (3)</ingredients>
+                <ingredients>пепел драконида (1)</ingredients>
+                <ingredients>эссенция полыни</ingredients>
+                <preparation_time>60 мин</preparation_time>
+                <effectiveness>умеренная</effectiveness>
+            </recipe>
+	    </monster>
+	    <monster>
+            <id>2</id>
+            <name>Полуденница</name>
+            <description>Призрак, терроризирующий поля во время жатвы.</description>
+            <danger_level>5</danger_level>
+            <habitat>поля Редании и амбары Туссента</habitat>
+            <first_mention>1198-07-15</first_mention>
+            <immunities>кровотечение</immunities>
+            <vulnerabilities>световая магия</vulnerabilities>
+            <weight>неосязаем</weight>
+            <activity>днём</activity>
+            <recipe>
+                <type>масло</type>
+                <ingredients>лепестки лунного цветка (2)</ingredients>
+                <ingredients>серебряная нить (1)</ingredients>
+                <ingredients>экстракт чеснока</ingredients>
+                <preparation_time>30 мин</preparation_time>
+                <effectiveness>высокая</effectiveness>
+            </recipe>
+	    </monster>
+	    <monster>
+            <id>3</id>
+            <name>Катакан</name>
+            <description>Крылатый демон с хвостом скорпиона.</description>
+            <danger_level>9</danger_level>
+            <habitat>горные пещеры Туссента</habitat>
+            <first_mention>1150-04-12</first_mention>
+            <immunities>огонь</immunities>
+            <immunities>яды</immunities>
+            <height>2 м</height>
+            <weight>200 кг</weight>
+            <activity>в сумерках</activity>
+            <recipe>
+                <type>масло</type>
+                <ingredients>жало мантикоры (4)</ingredients>
+                <ingredients>нефритовая пыль (2)</ingredients>
+                <ingredients>спирт Альберихта</ingredients>
+                <preparation_time>90 мин</preparation_time>
+                <effectiveness>критическая</effectiveness>
+            </recipe>
+	    </monster>
+	    <monster>
+            <id>4</id>
+            <name>Кикимора</name>
+            <description>Болотная нежить из гниющих останков.</description>
+            <danger_level>6</danger_level>
+            <habitat>топи Вендена</habitat>
+            <first_mention>1221-09-03</first_mention>
+            <immunities>удушье</immunities>
+            <vulnerabilities>земляная магия</vulnerabilities>
+            <height>1 м</height>
+            <weight>15 кг</weight>
+            <activity>ночью</activity>
+            <recipe>
+                <ingredients>грибы-поганки (5)</ingredients>
+                <ingredients>глаз василиска (1)</ingredients>
+                <ingredients>роса папоротника (3)</ingredients>
+                <preparation_time>45 мин</preparation_time>
+                <effectiveness>средняя</effectiveness>
+            </recipe>
+	    </monster>
+	    <monster>
+            <id>5</id>
+            <name>Элементаль льда</name>
+            <description>Дух вечной зимы.</description>
+            <danger_level>10</danger_level>
+            <habitat>ледники Ковира</habitat>
+            <first_mention>1105-12-01</first_mention>
+            <immunities>заморозка</immunities>
+            <immunities>дробление</immunities>
+            <height>5 м</height>
+            <weight>не измерим</weight>
+            <activity>всегда</activity>
+            <recipe>
+                <type>яд</type>
+                <ingredients>сердце огненного элементаля (1)</ingredients>
+                <ingredients>сера (3)</ingredients>
+                <ingredients>расплавленное железо</ingredients>
+                <preparation_time>120 мин</preparation_time>
+                <effectiveness>переменная</effectiveness>
+            </recipe>
+        </monster>
+	</bestiarum>
+</root>
